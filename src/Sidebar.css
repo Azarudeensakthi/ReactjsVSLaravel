@@ -1,0 +1,65 @@
+/* Sidebar Custom Styles */
+.sidebar {
+    background-color: #fff600;
+   
+ 
+  }
+  
+
+.sidebar-header {
+  text-align: center;
+  font-size: 28px;  
+  font-weight: 700;  
+  color: #ff00f2;  
+  text-shadow: 0 0 10px rgba(253, 0, 0, 0.8), 0 0 20px rgba(0, 243, 0, 0.6), 0 0 30px rgba(251, 255, 0, 0.4); /* Glowing effect */
+  animation: blinkEffect 1.5s infinite alternate; /* Blinking effect */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Blinking animation */
+@keyframes blinkEffect {
+  0% {
+    color: #ff0000;
+    text-shadow: 0 0 10px rgba(243, 156, 18, 0.8), 0 0 20px rgba(243, 156, 18, 0.6), 0 0 30px rgba(81, 255, 0, 0.4);
+  }
+  50% {
+    color: #1e00ff;
+    text-shadow: 0 0 15px rgba(231, 126, 34, 1), 0 0 25px rgba(231, 126, 34, 0.8), 0 0 35px rgba(231, 126, 34, 0.6);
+  }
+  100% {
+    color: #73ff00;
+    text-shadow: 0 0 10px rgba(243, 156, 18, 0.8), 0 0 20px rgba(243, 156, 18, 0.6), 0 0 30px rgba(243, 156, 18, 0.4);
+  }
+}
+
+
+.sidebar-header:hover {
+  color: #e1ff00;
+  text-shadow: 0 0 15px rgba(231, 126, 34, 1), 0 0 25px rgba(12, 158, 255, 0.8), 0 0 35px rgba(222, 103, 0, 0.6); /* Glowing effect on hover */
+  animation: none; /* Stop blinking when hovered */
+}
+
+  
+  .sidebar-links li {
+    color: #3cff00; 
+    font-size: 18px; 
+    text-decoration: underline; 
+  
+  }
+  .sidebar-links li a:hover {
+    color: #62ff00; 
+    text-decoration: underline; 
+  }
+  
+  .sidebar-links li a:active {
+    color: #3498db; 
+  }
+  
+  .sidebar-links li:last-child {
+    margin-top: auto; 
+    padding-bottom: 20px;
+  }
+  
+  .sidebar-links li a:hover {
+    transition: all 0.3s ease;
+  }

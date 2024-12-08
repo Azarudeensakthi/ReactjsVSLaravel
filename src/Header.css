@@ -1,0 +1,19 @@
+/* Header Styling */
+.header {
+    background-color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .user-info span {
+    font-size: 16px;
+    color: #7f8c8d;
+  }
+  

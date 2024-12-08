@@ -1,0 +1,50 @@
+/* Container to hold the images */
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;  
+    flex-wrap: wrap;  
+    
+  }
+  
+  /* Style for each image container */
+  .logo-item {
+    position: relative;
+    flex: 1;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(248, 1, 1, 0.1);
+    transition: transform 0.3s ease-in-out;
+    min-width: 250px;
+    max-width: 300px;  
+  }
+  
+  /* Hover effect */
+  .logo-item:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Image styles */
+  .logo-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    filter:hue-rotate(270deg);
+  }
+  
+  /* Caption styles */
+  .logo-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(255, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    width: calc(100% - 20px); 
+    box-sizing: border-box;  
+  }
+  

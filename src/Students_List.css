@@ -1,0 +1,223 @@
+/* General Container Style */
+.students-list-container {
+    width: 100%;
+  
+   
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+  
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Title Style */
+.title {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Table Styles */
+.students-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: white;
+}
+
+.students-table th,
+.students-table td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-family: 'Poppins', sans-serif;
+}
+
+.students-table th {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.students-table td {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.students-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.students-table tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    transform: scale(1.01);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Relieve Button */
+.relieve-button {
+    padding: 10px 15px;
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.relieve-button:hover {
+    background-color: #e84141;
+    transform: translateY(-2px);
+}
+
+/* Loading Text Style */
+.loading {
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    font-style: italic;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* No Data Style */
+.no-data {
+    text-align: center;
+    color: #f44336;
+    font-size: 1.2rem;
+    font-style: italic;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Margins */
+.students-table {
+    margin: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .students-list-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .students-table th,
+    .students-table td {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .relieve-button {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup-content {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    width: 400px;
+    animation: zoomIn 0.3s ease-in-out;
+    font-family: 'Arial', sans-serif;
+    filter:hue-rotate(90deg);
+}
+
+.popup h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffde59;
+}
+
+.popup-inputs label {
+    display: block;
+    margin: 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    color: #ffde59;
+}
+
+.popup-inputs input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ffde59;
+    margin-top: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.popup-button {
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.popup-button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #ee0979, #ff6a00);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}

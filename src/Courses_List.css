@@ -1,0 +1,74 @@
+/* Overall table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table heading styles */
+th {
+  background-color: #ff4c4c; /* Red background for header */
+  color: white;
+  padding: 12px 15px;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/* Table data styles */
+td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Add hover effect on rows */
+tr:hover {
+  background-color: #95ff00; /* Light grey background on hover */
+}
+
+/* Add colors for odd and even rows */
+tr:nth-child(odd) {
+  background-color: #00e1ff; /* Slightly lighter background for odd rows */
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff; /* White background for even rows */
+}
+
+/* Styling for the loading message */
+td[colspan="4"] {
+  text-align: center;
+  font-size: 18px;
+  color: #ff4c4c; /* Red color for loading text */
+}
+
+/* Styling for the "No courses available" message */
+td[colspan="4"]:empty {
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+}
+
+/* Optional: Styling for the page */
+h1 {
+  text-align: center;
+  color: #ff4c4c;
+  font-size: 28px;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Optional: Adding a slight border-radius to the table */
+table, th, td {
+  border-radius: 8px;
+}
+
+
+
+
